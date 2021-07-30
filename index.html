@@ -9,23 +9,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Scada">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <!-- Header -->
 
     <header class="navigation">
-        <div class="inlineBlock logo">
-            <img src="images/nate_logo.png" alt="">
-        </div>
         <div class="inlineBlock">
-            <ul class="ulHeader">
-                <li>About</li>
-                <li>Skills</li>
-                <li id="myWorklink">Work </li>
-                <li>Contact</li>
-            </ul>
+        <div >
+            <img src="images/nate_logo.png" id="logo">
+            <img src="images/Menu Button.png" id="menu">
         </div>
+        </div>
+            <!-- <ul class="ulHeader">
+                <li>About</li>
+                <li> <a href="#mySkills"> Skills </a></li>
+                <li> <a href="#myWork"> Work </a> </li>
+                <li>Contact</li>
+            </ul> -->
+        
     </header>
     <!-- <section class="heroImg">
         <div class="content">
@@ -34,11 +35,10 @@
             <button>Download Resume</button>
         </div>
     </section> -->
-
 <!-- My Skills -->
 
 <section class="mySkills">
-    <h1 id="MySkillsTitle">My UX Skills</h1>
+    <h1 id="mySkills">My UX Skills</h1>
     <div class="flexContainer">
         <div class="flexChild">
             <img src="images/User_reasearch_image.png" class="skillsImage" alt="">
@@ -64,7 +64,7 @@
 
 <section class="myWork">
     
-    <h1>My Work</h1>
+    <h1 id="myWork">My Work</h1>
     <div class="workGrid">
         <div class="WECYCLEimage">
             <img src="images/WECYCLE.png" alt="">
@@ -103,6 +103,21 @@
             <li>Contact</li>
         </ul>
     </footer>
+
+<!-- Menu  -->
+
+<div id="myNav" class="menu-overlay">
+    <!-- Button to close the overlay navigation -->
+    <img src="images/noun_X_3388368 (1).png" alt="" id="closebutton">
+    <!-- Overlay content -->
+    <div class="menu-list">
+      <a href="#" class="menu-item">About</a>
+      <a href="#mySkills" class="menu-item"> Skills </a>
+      <a href="#myWork" class="menu-item"> Work </a>
+      <a href="#" class="menu-item">Contact</a>
+    </div>
+  </div>
+
 <script
     src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
